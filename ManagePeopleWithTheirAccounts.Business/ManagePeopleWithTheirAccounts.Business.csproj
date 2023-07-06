@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="AccountBusiness\" />
+    <Folder Include="TransactionBusiness\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ManagePeopleWithTheirAccounts.ViewModel\ManagePeopleWithTheirAccounts.ViewModel.csproj" />
+    <ProjectReference Include="..\WebProjectSkillsAssessment.Domain\ManagePeopleWithTheirAccounts.Data.csproj" />
+    <ProjectReference Include="..\WebProjectSkillsAssessment.Repository\ManagePeopleWithTheirAccounts.Repository.csproj" />
+  </ItemGroup>
+
+</Project>

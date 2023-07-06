@@ -1,0 +1,65 @@
+﻿@using WebProjectSkillsAssessment.Domain.Entities
+@model List<GetTransactionsByAccountCodeOrId>
+
+<style>
+    .top-right {
+        top: 0;
+        right: 0;
+    }
+</style>
+<br />
+<br />
+<div class="card card-body mt-12">
+<div class="jumbotron jumbotron-fluid">
+    <p>
+        <div class="col-lg-9 col-12 mx-auto">
+            <div class="card card-body mt-4">
+                <div class="input-group">
+
+                    <form class="form-inline" >
+                        <label for="email">Date From:</label>
+                        <input type="date" id="DateFrom" name="DateFrom">
+                        <label for="pwd">Date To:</label>
+                        <input type="date" id="pwd" name="DateTo">
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="col-lg-9 col-12 mx-auto">
+        <table class=table>
+            <thead class="table-primary">
+                <tr>
+                    <th>@Html.DisplayName("Code")</th>
+                    <th>@Html.DisplayName("Transaction Date")</th>
+                    <th>@Html.DisplayName("CaptureDate")</th>
+                    <th>@Html.DisplayName("Action")</th>
+                </tr>
+            </thead>
+            <tbody>
+               @if(Model.Count > 0)
+               {
+                 @foreach (var item in Model)
+                 {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem =>item.Code)</td>
+                        <td>@Html.DisplayFor(modelItem =>item.TransactionDate)</td>
+                        <td>@Html.DisplayFor(modelItem =>item.CaptureDate)</td>
+                        <td>
+                            <a asp-controller="/Transactions" asp-action="GetTransactionDetailsByAccountCodeOrId" asp-route-AccountCode="@item.Code" class="btn bg-gradient-primary mt-2 me-2">View Details</a>
+                                        <a asp-controller="/Transactions" asp-action="UpdateTransactions" asp-route-Code="@item.Code" class="btn bg-gradient-primary mt-2 me-2">Edit Details<i class="fas fa-user-edit"></i></a>
+                        </td>
+                    </tr>
+                 }
+                }
+               
+            </tbody>
+           
+        </table>
+    </p>
+</div>
+</div>
+</div>

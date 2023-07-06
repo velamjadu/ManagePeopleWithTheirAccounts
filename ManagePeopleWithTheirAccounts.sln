@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagePeopleWithTheirAccounts", "WebProjectSkillsAssessment\ManagePeopleWithTheirAccounts.csproj", "{F34F1DFB-20CC-4204-8AB5-AB7B83C0EBC8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E} = {92301D68-B28C-4300-9D75-E0EB7C0DAE4E}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagePeopleWithTheirAccounts.Data", "WebProjectSkillsAssessment.Domain\ManagePeopleWithTheirAccounts.Data.csproj", "{268A8DC0-D55B-48A3-93E9-281305627C2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagePeopleWithTheirAccounts.Repository", "WebProjectSkillsAssessment.Repository\ManagePeopleWithTheirAccounts.Repository.csproj", "{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePeopleWithTheirAccounts.ViewModel", "ManagePeopleWithTheirAccounts.ViewModel\ManagePeopleWithTheirAccounts.ViewModel.csproj", "{92301D68-B28C-4300-9D75-E0EB7C0DAE4E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{268A8DC0-D55B-48A3-93E9-281305627C2E} = {268A8DC0-D55B-48A3-93E9-281305627C2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagePeopleWithTheirAccounts.Business", "ManagePeopleWithTheirAccounts.Business\ManagePeopleWithTheirAccounts.Business.csproj", "{12A8E8D0-7B98-42B9-8F07-E1831DE3CADE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{268A8DC0-D55B-48A3-93E9-281305627C2E} = {268A8DC0-D55B-48A3-93E9-281305627C2E}
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E} = {92301D68-B28C-4300-9D75-E0EB7C0DAE4E}
+		{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A} = {BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F34F1DFB-20CC-4204-8AB5-AB7B83C0EBC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F34F1DFB-20CC-4204-8AB5-AB7B83C0EBC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F34F1DFB-20CC-4204-8AB5-AB7B83C0EBC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F34F1DFB-20CC-4204-8AB5-AB7B83C0EBC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268A8DC0-D55B-48A3-93E9-281305627C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268A8DC0-D55B-48A3-93E9-281305627C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268A8DC0-D55B-48A3-93E9-281305627C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268A8DC0-D55B-48A3-93E9-281305627C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD23FD68-F499-44A0-9AEA-22C1C32F3B0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92301D68-B28C-4300-9D75-E0EB7C0DAE4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A8E8D0-7B98-42B9-8F07-E1831DE3CADE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A8E8D0-7B98-42B9-8F07-E1831DE3CADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A8E8D0-7B98-42B9-8F07-E1831DE3CADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A8E8D0-7B98-42B9-8F07-E1831DE3CADE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {641FCCA4-273C-4ED6-8481-822B39F5C90F}
+	EndGlobalSection
+EndGlobal
